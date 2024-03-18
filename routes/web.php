@@ -12,7 +12,7 @@ Route::post('/article/add', 'ArticlesController@store');
 Route::get('/article/{id}','ArticlesController@show');
 Route::delete('/article/{id}/delete', 'ArticlesController@destroy');
 Route::get('/article/{id}/edit','ArticlesController@edit');
-Route::put('/article/{id}/update','ArticlesController@update');
+Route::put('/article/{id}/edit','ArticlesController@update');
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
